@@ -21,9 +21,11 @@ export default function Sheets() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-20">
-            {musicSheets.map((sheet) => (
-              <MusicSheetCard key={sheet.id} sheet={sheet} showDescription={true} />
-            ))}
+            {musicSheets
+              .filter((sheet) => sheet.image) // Only show sheets with images
+              .map((sheet) => (
+                <MusicSheetCard key={sheet.id} sheet={sheet} showDescription={true} />
+              ))}
           </div>
         </div>
       </section>

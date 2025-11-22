@@ -5,8 +5,10 @@ import MusicSheetCard from './components/MusicSheetCard';
 import { musicSheets } from './data/musicSheets';
 
 export default function Home() {
-  // Get first 3 sheets for homepage
-  const featuredSheets = musicSheets.slice(0, 3);
+  // Get first 3 sheets with images for homepage
+  const featuredSheets = musicSheets
+    .filter((sheet) => sheet.image) // Only include sheets with images
+    .slice(0, 3);
 
   return (
     <div className="min-h-screen bg-white">
