@@ -25,26 +25,32 @@ export default function MusicSheetCard({ sheet, showDescription = true }) {
           <h3 className="text-2xl font-serif text-black group-hover:opacity-70 transition-opacity">
             {sheet.title}
           </h3>
-          <span className="text-sm text-black/50 font-light">
-            €{sheet.price}
-          </span>
+          {sheet.price && (
+            <span className="text-sm text-black/50 font-light">
+              €{sheet.price}
+            </span>
+          )}
         </div>
-        <p className="text-xs uppercase tracking-[0.15em] text-black/40 mb-4">
-          {sheet.difficulty}
-        </p>
-        {showDescription && (
+        {sheet.difficulty && (
+          <p className="text-xs uppercase tracking-[0.15em] text-black/40 mb-4">
+            {sheet.difficulty}
+          </p>
+        )}
+        {showDescription && sheet.description && (
           <p className="text-sm text-black/50 leading-relaxed mb-6 font-light">
             {sheet.description}
           </p>
         )}
-        <a 
-          href={sheet.stripeLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block text-xs uppercase tracking-[0.2em] text-black border-b border-black/20 pb-2 hover:border-black transition-all duration-300"
-        >
-          Buy
-        </a>
+        {sheet.stripeLink && (
+          <a 
+            href={sheet.stripeLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-xs uppercase tracking-[0.2em] text-black border-b border-black/20 pb-2 hover:border-black transition-all duration-300"
+          >
+            Buy
+          </a>
+        )}
       </div>
     </div>
   );

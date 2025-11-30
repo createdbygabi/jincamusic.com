@@ -12,46 +12,11 @@ export default function About() {
             About
           </h1>
 
-          <div className="space-y-12 text-xl md:text-2xl text-black/50 leading-relaxed font-light">
-            <p>
-              Welcome to the world of Jionca, where piano compositions come to life 
-              through passion, dedication, and artistic vision.
-            </p>
-            
-            <p>
-              Jionca is a composer who believes that music has the power to transcend 
-              boundaries and touch the deepest parts of our souls. Each piece is crafted 
-              with meticulous attention to detail, ensuring that both the performer and 
-              the listener experience something truly special.
-            </p>
-
-            <h2 className="text-4xl md:text-5xl font-serif text-black mt-20 mb-8 leading-tight">
-              The Journey
-            </h2>
-            <p>
-              With years of experience in composition and performance, Jionca has 
-              developed a unique style that blends classical elegance with contemporary 
-              expression. The compositions range from gentle, introspective pieces to 
-              powerful, dramatic works that showcase the full range of the piano.
-            </p>
-
-            <h2 className="text-4xl md:text-5xl font-serif text-black mt-20 mb-8 leading-tight">
-              For Every Musician
-            </h2>
-            <p>
-              Whether you're just beginning your piano journey or you're an experienced 
-              performer looking for new repertoire, Jionca's compositions offer something 
-              for everyone. Each piece is carefully graded and includes detailed notation 
-              to help you bring the music to life.
-            </p>
-
-            <h2 className="text-4xl md:text-5xl font-serif text-black mt-20 mb-8 leading-tight">
-              Connect
-            </h2>
-            <p>
-              We'd love to hear from you. Whether you have questions about a composition, 
-              need help with a piece, or want to commission a custom work, feel free to 
-              reach out. Your musical journey is important to us.
+          <div className="space-y-8">
+            <p className="text-xl md:text-2xl text-black/50 leading-relaxed font-light">
+              constant flow of musical ideas in my head, i have to get them out. this is where they come out :^) <br />
+              my only goal is to one day compose a full moving orchestra piece and play it live with a live orchestra (like Rachmaninoff's 2nd piano concerto). <br />
+              also, i LOVE writing.
             </p>
           </div>
         </div>
