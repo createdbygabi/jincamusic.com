@@ -167,7 +167,7 @@ export default function Home() {
             <p className="text-lg sm:text-xl md:text-2xl text-black/50 leading-relaxed font-light">
             constant flow of musical ideas in my head, i have to get them out. this is where they come out :^) <br className="hidden sm:block" />
             <span className="block sm:inline"> </span>my only goal is to one day compose a full moving orchestra piece and play it live with a live orchestra (like Rachmaninoff's 2nd piano concerto). <br className="hidden sm:block" />
-            <span className="block sm:inline"> </span>also, i LOVE writing.
+            <span className="block sm:inline"> </span>also, i LOVE writing and software engineering.
             </p>
   
           </div>

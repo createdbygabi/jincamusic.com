@@ -16,7 +16,7 @@ export default function About() {
             <p className="text-xl md:text-2xl text-black/50 leading-relaxed font-light">
               constant flow of musical ideas in my head, i have to get them out. this is where they come out :^) <br />
               my only goal is to one day compose a full moving orchestra piece and play it live with a live orchestra (like Rachmaninoff's 2nd piano concerto). <br />
-              also, i LOVE writing.
+              also, i LOVE writing and software engineering.
             </p>
           </div>
         </div>
