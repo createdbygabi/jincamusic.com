@@ -1,5 +1,4 @@
 // Challenge started: November 8, 2025 (Day 1)
-// Today: November 30, 2025 (Day 23)
 const CHALLENGE_START_DATE = new Date('2025-11-08');
 
 function getDateForDay(dayNumber) {
@@ -86,13 +85,15 @@ export const songs = [
 // Challenge constants
 export const CHALLENGE_START = CHALLENGE_START_DATE.toISOString().split('T')[0];
 export const getCurrentDay = () => {
-  const today = new Date('2025-11-30'); // Current date
+  const today = new Date();
+  today.setHours(0, 0, 0, 0); // normalize to start of day
   const start = new Date(CHALLENGE_START_DATE);
+  start.setHours(0, 0, 0, 0);
   const diffTime = today - start;
   const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24)) + 1;
   return diffDays;
 };
 export const getCurrentDate = () => {
-  return new Date('2025-11-30'); // Current date
+  return new Date(); // Current date
 };
 
